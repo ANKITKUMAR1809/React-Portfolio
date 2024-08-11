@@ -1,7 +1,7 @@
 .about {
     width: 100%;
-    /* height: 100vh; */
-    background-color: white;
+    /* min-height: 100vh; */
+    background-color: var(--bg-color2);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,7 +28,7 @@
     position: absolute;
     top: -2rem;
     left: -2rem;
-    background: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
+    background: var(--linear-gradient);
     z-index: -1;
     width: 100%;
     height: 100%;
@@ -45,9 +45,38 @@
     font-size: 3rem;
 }
 .aboutInfo p{
-    color: rgb(117, 118, 118);
+    color:var(--secondary-text);
     font-size: 1.1rem;
 }
+
+/* .about-skill-type*/
+
+.about-skill-type{
+    cursor: pointer;
+    display: flex;
+    margin: 1rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.skill-type-frontend,.skill-type-backend{
+    /* border: 1px solid red; */
+    padding:0.5rem 1rem ;
+    border-radius: 8px;
+    background:var(--linear-gradient);
+}
+
+.skill-type-frontend:hover,.skill-type-backend:hover{
+   box-shadow: var(--box-shadow);
+}
+
+.skill-type-frontend h2,.skill-type-backend h2{
+    font-weight: 400;
+    color: var(--btn-color);
+    /* font-size: 50px; */
+}
+
+/* frontend skill */
+/* about-skills */
 .skill {
     display: flex;
     width: 100%;
@@ -98,7 +127,28 @@
     width: 50px;
 }
 
+/* backendSkill */
+.backendSkill{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.backend-skill-img{
+    width:30%;
+    height: auto;
+    margin: 0 .3rem;
+    padding: .5rem 1rem;
+}
+.backend-skill-img img{
+    aspect-ratio:3/3;
+    width:100%;
+}
+
 #download {
+    margin: 1rem 0;
     background: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
     padding: 0.5rem 1rem;
     width: max-content;

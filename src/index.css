@@ -9,7 +9,11 @@
 :root{
     --link-color: #8490ff;
     --bg-color1: azure;
+    --bg-color2:white;
     --linear-gradient:linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
+    --secondary-text:rgb(117, 118, 118);
+    --btn-color:white;
+    --box-shadow: 0px 0px 20px 0px rgba(132, 144, 255, 0.633);
 }
 body {
   background: rgb(249 249 255);
