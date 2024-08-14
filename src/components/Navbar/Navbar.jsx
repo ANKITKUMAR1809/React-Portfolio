@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import { RiMenu3Line, RiCloseLargeLine } from '@remixicon/react'
+import { NavLink,useNavigate } from 'react-router-dom'
 const Navbar = () => {
+  const navigate=useNavigate()
   const [icon , setIcon]= useState(<RiMenu3Line/>)
   function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -15,13 +17,14 @@ const Navbar = () => {
 }
   return (
     <nav id="toppos">
-        <div className="siteName">
+      {/* tackle after going project then go to about it will show on project/#about */}
+        <div className="siteName" onClick={()=>navigate("/")}>
             <h1>SAK</h1>
             <h1>Web Developer</h1>
         </div>
         <div className="topnav" id="myTopnav">
             <a href="#about">ABOUT</a>
-            <a href="#project">PROJECT</a>
+            <NavLink to="/projects" >PROJECT</NavLink>
             <a href="#resume">RESUME</a>
             <a href="#contact">CONTACT</a>
             <div className="icon" onClick={myFunction}>

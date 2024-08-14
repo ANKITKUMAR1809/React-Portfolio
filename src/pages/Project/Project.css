@@ -1,0 +1,119 @@
+section{
+    height: auto;
+}
+.project-heading{
+    padding: 2rem 0;
+}
+.project-heading h1{
+    font-size: 4rem;
+}
+
+.project {
+    max-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.project-img-slider::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+
+.project-img-slider::-webkit-scrollbar-thumb {
+    background: var(--linear-gradient);
+    border-radius: 12px;
+}
+
+.project-img-slider {
+    height: 100vh;
+    overflow-y: scroll;
+    width: 30%;
+    box-shadow: inset var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.project-img-slider .project-img {
+    width: 80%;
+    margin: 1rem auto;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.project-img:hover {
+    /* transform: scaleY(1.05); */
+    transform:scale3d(-1, 0.8, 0.7 );
+}
+.project-img img {
+    width: 100%;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.project-img-viewer{
+    padding: 0 2rem;
+    width: 65%;
+    height: 100vh;
+    position:relative;
+}
+.project-name{
+    padding: 1rem 0;
+}
+.project-name h1{
+    font-size: 2.5rem;
+}
+.project-description h2{
+    font-size: 1.5rem;
+}
+.project-description h3{
+    font-size: 1rem;
+    color: var(--secondary-text);
+}
+
+
+/* responsive */
+@media screen and (max-width: 768px) {
+
+    .project{
+        flex-direction: column;
+        overflow-x: hidden;
+        height: auto;
+    }
+    .project-img-slider::-webkit-scrollbar {
+        height: 3px;
+    }
+    .project-img-slider {
+        width: 100%;
+        min-height: 16vh;
+        height: auto;
+        overflow:auto;
+        white-space: nowrap;
+        display: block;
+        box-shadow: inset var(--box-shadow);
+    }
+    .project-img-slider .project-img {
+        width: 40%;
+        white-space: nowrap;
+        display: inline-block;
+        margin:  0.5rem;
+        position: relative;
+    }
+    .project-img-viewer{
+        margin: 2rem auto;
+        width: 100%;
+    }
+
+    .project-img-viewer iframe{
+        width: 100%;
+    }
+   
+    .project-heading{
+        padding: 0.5rem 0;
+    }
+    .project-heading h1{
+        font-size: 2rem;
+    }
+}
