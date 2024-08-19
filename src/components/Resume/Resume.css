@@ -75,6 +75,9 @@
     background-color: inherit;
     width: 50%;
 }
+.content h2{
+    font-size: 1.8rem;
+}
 
 /* The circles on the timeline */
 .timeline .container::after {
@@ -147,8 +150,9 @@
     .resume-type-education,.resume-type-experience{
         /* border: 1px solid red; */
         padding:0.5rem 1rem ;
-        margin: 0 0.5rem;
-        font-size: 0.5rem;
+        margin: 10px 0.5rem;
+        text-align: center;
+        font-size: 0.8rem;
         background:var(--linear-gradient);
     }
 
@@ -215,5 +219,9 @@
     }
     .timeline .content p{
         font-size: 0.7rem;
+    }
+    .resume-type{
+        display: block;
+        margin: 0;
     }
 }

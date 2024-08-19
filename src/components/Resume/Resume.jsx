@@ -51,7 +51,7 @@ const Resume = () => {
 
                             <div className="container left">
                                 <div className="content">
-                                    <h2>React Developer Internship</h2>
+                                    <h2>React Dev Internship</h2>
                                     <p>Next24Tech Remote, India</p>
                                     <p>May 2024 - July 2024  Parttime</p>
                                 </div>
@@ -59,7 +59,7 @@ const Resume = () => {
 
                             <div className="container right">
                                 <div className="content">
-                                    <h2>MERN Developer Internship</h2>
+                                    <h2>MERN Dev Internship</h2>
                                     <p>John Raickers Hyderabad, India</p>
                                     <p>Aril-2024 - June-2024  Parttime</p>
                                 </div>
@@ -67,14 +67,14 @@ const Resume = () => {
 
                             <div className="container left">
                                 <div className="content">
-                                    <h2>Web Development Internship</h2>
+                                    <h2>Web Dev Internship</h2>
                                     <p>BoostStart Expert .co - Chattisgarh, India</p>
                                     <p>Feb 2024 - Apr 2024 Parttime</p>
                                 </div>
                             </div>
                             <div className="container right">
                                 <div className="content">
-                                    <h2>Web Development Internship</h2>
+                                    <h2>Web Dev Internship</h2>
                                     <p>Spotmies LLP. - Hyderabad, India</p>
                                     <p>July-2021 - Aug-2021  Parttime</p>
                                 </div>
