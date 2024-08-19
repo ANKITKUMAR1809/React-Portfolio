@@ -50,6 +50,8 @@ section{
 .project-img img {
     width: 100%;
     cursor: pointer;
+    position: relative;
+    z-index: -1;
     object-fit: contain;
 }
 
@@ -104,6 +106,7 @@ section{
     .project-img-viewer{
         margin: 2rem auto;
         width: 100%;
+        z-index: -1;
     }
 
     .project-img-viewer iframe{

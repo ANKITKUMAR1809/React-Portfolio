@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import { RiMenu3Line, RiCloseLargeLine } from '@remixicon/react'
-import { NavLink,useNavigate } from 'react-router-dom'
+import { Link, NavLink,useNavigate } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 const Navbar = () => {
   const navigate=useNavigate()
   const [icon , setIcon]= useState(<RiMenu3Line/>)
@@ -23,10 +24,10 @@ const Navbar = () => {
             <h1>Web Developer</h1>
         </div>
         <div className="topnav" id="myTopnav">
-            <a href="#about">ABOUT</a>
-            <NavLink to="/projects" >PROJECT</NavLink>
-            <a href="#resume">RESUME</a>
-            <a href="#contact">CONTACT</a>
+            <HashLink to="/#about">ABOUT</HashLink>
+            <NavLink to="/projects">PROJECT</NavLink>
+            <HashLink to="#resume">RESUME</HashLink>
+            <HashLink to="#contact">CONTACT</HashLink>
             <div className="icon" onClick={myFunction}>
                 {icon}
             </div>

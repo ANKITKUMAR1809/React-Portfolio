@@ -28,10 +28,13 @@ a {
 .active {
   color: #8490ff;
 }
+.onActive{
+    color: #8490ff;
+}
 
 .header,
 .about,
-.contact {
+.contact,#resume {
     padding: 3rem 0;
 }
 
