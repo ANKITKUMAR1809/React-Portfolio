@@ -9,7 +9,7 @@ const Header = () => {
                 <div className="info ">
                     <h3>THIS IS ME</h3>
                     <h1>ANKIT KUMAR</h1>
-                    <h2>I'm Front-end Developer.Currently, I am starving for Opportunity. Becoming MERN stack developer,
+                    <h2>I'm Front-end Developer. Currently, I am starving for Opportunity. Becoming MERN stack developer,
                         Youtuber and Waiting for Job Opportunity or Internship.</h2>
                     <a href="#contact" id="hirebtn">HIRE ME</a>
                 </div>

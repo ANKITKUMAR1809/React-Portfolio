@@ -77,7 +77,7 @@
 }
 
 /* The circles on the timeline */
-.container::after {
+.timeline .container::after {
     content: '';
     position: absolute;
     width: 25px;

@@ -34,8 +34,8 @@ a {
 
 .header,
 .about,
-.contact,#resume {
-    padding: 3rem 0;
+#contact,#resume {
+    padding: 2rem 1rem;
 }
 
 

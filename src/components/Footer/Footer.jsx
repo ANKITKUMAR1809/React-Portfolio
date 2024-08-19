@@ -11,9 +11,9 @@ const Footer = () => {
                         <h3>About</h3>
                         <p>
                             I hope you like my portfolio,
-                            & if you have any query then feel
-                            free to ask with me or contact me.
-                            And follow me on everywhere, specially
+                            if you have any query then feel
+                            free to ask or contact me.
+                            And follow me on everywhere, Especially
                             in your heart. Thanks Have a Great Day!
                         </p>
                     </div>

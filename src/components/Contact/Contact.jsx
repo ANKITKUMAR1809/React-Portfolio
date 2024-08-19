@@ -3,6 +3,9 @@ import './Contact.css'
 const Contact = () => {
     return (
         <section id="contact">
+            <div className='contact-img'>
+                <img src="https://dlzibc868dsjl.cloudfront.net/contact-assets/contact.png" alt="" />
+            </div>
             <div className="contact" >
                 <div className="phead">
                     <h1>CONTACT</h1>
