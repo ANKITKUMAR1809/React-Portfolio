@@ -1,5 +1,9 @@
 footer {
     background-color: rgb(0 10 45);
+    /* background-color: #e5e5f7; */
+    opacity: 1;
+    background-image: radial-gradient(#8490ff6a 1.3px, rgb(0 10 45) 1.3px);
+    background-size: 10px 10px;
 }
 
 .footer {
@@ -9,24 +13,24 @@ footer {
     flex-wrap: wrap;
     height: 100%;
     width: 100%;
-    padding-top:2rem;
+    padding-top: 2rem;
     justify-content: space-around;
     align-items: start;
 }
 
 .footer h3,
 .footer p {
-    color: #fff;
+    color: var(--btn-color);
 }
 
 .flinks ul a li {
-    color: white;
+    color: var(--btn-color);
     padding: 0.5rem 0;
     list-style: none;
 }
 
 .footer .fa {
-    color: white;
+    color: var(--btn-color);
     /* margin: 1rem; */
 }
 
@@ -48,7 +52,7 @@ footer {
 }
 
 .faddress li {
-    color: white;
+    color: var(--btn-color);
     list-style-type: none;
     padding: 0.5rem 0;
 }

@@ -10,7 +10,7 @@ nav {
 }
 
 nav h1 {
-    color: black;
+    color: var(--text-color);
     font-size: 3rem;
 
 }
@@ -32,7 +32,7 @@ cursor: pointer;
 .topnav a {
     float: left;
     display: block;
-    color: black;
+    color: var(--text-color);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -42,20 +42,20 @@ cursor: pointer;
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    color: #8490ff;
+    color: var(--link-color);
 }
 
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
     display: none;
-    color: black;
+    color: var(--text-color);
 }
 
 #top {
     display: none;
     position: fixed;
-    color: white;
+    color:var(--btn-color);
     bottom: 5%;
     right: 5%;
     width: 50px;
@@ -63,5 +63,5 @@ cursor: pointer;
     padding-top: 1rem;
     border-radius: 25px 25px 0px 0px;
     text-align: center;
-    background: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
+    background: var(--linear-gradient);
 }

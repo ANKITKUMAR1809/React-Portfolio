@@ -1,197 +1,213 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  color: rgb(0 10 45);
-  font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: var(--text-color);
+    font-family: "Raleway", sans-serif;
 }
-:root{
+
+:root {
     --link-color: #8490ff;
     --bg-color1: azure;
-    --bg-color2:white;
-    --linear-gradient:linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
-    --secondary-text:rgb(117, 118, 118);
-    --primary-text:#ffffff;
-    --btn-color:white;
+    --bg-color2: white;
+    --body-color: rgb(249 249 255);
+    --linear-gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
+    --secondary-text: rgb(117, 118, 118);
+    --primary-text: #ffffff;
+    --btn-color: white;
     --box-shadow: 0px 0px 20px 0px rgba(132, 144, 255, 0.633);
+    --text-color: rgb(0 10 45);
+    /* pattern design */
+    
 }
+
 body {
-  background: rgb(249 249 255);
+    background: var(--body-color);
 }
 
 a {
-  color: black;
-  text-decoration: none;
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 .active {
-  color: #8490ff;
+    color: #8490ff;
 }
-.onActive{
+
+.onActive {
     color: #8490ff;
 }
 
 .header,
 .about,
-#contact,#resume {
+#contact,
+#resume {
     padding: 2rem 1rem;
 }
 
 
 /* responsiveness css for all components */
-@media screen and (max-width:478px)
-{
-    .mylink{
+@media screen and (max-width:478px) {
+    .mylink {
         display: none;
     }
 }
+
 @media screen and (max-width: 768px) {
-  .topnav a {
-      display: none;
-  }
+    .topnav a {
+        display: none;
+    }
 
-  .topnav .icon {
-      float: right;
-      display: block;
-  }
+    .topnav .icon {
+        float: right;
+        display: block;
+    }
 
-  .topnav.responsive {
-      -webkit-backdrop-filter: blur(5px);
-      backdrop-filter: blur(30px);
-      background:var(--linear-gradient);
-      position: fixed;
-      top: 0;
-      right: 0;
-      /* float: right; */
-      width: 50%;
-      height: 100vh;
-      z-index: 2;
-  }
+    .topnav.responsive {
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(30px);
+        background: var(--linear-gradient);
+        position: fixed;
+        top: 0;
+        right: 0;
+        /* float: right; */
+        width: 50%;
+        height: 100vh;
+        z-index: 2;
+    }
 
-  .topnav.responsive .icon {
-      position: absolute;
-      padding: 1rem;
-      right: 0;
-      top: 0;
-  }
+    .topnav.responsive .icon {
+        position: absolute;
+        padding: 1rem;
+        right: 0;
+        top: 0;
+    }
 
-  .topnav.responsive a {
-      float: none;
-      margin: 2rem 0;
-      color: var(--primary-text);
-      display: block;
-      text-align: left;
-  }
+    .topnav.responsive a {
+        float: none;
+        margin: 2rem 0;
+        color: var(--primary-text);
+        display: block;
+        text-align: left;
+    }
 
-  /* HEADER RESPONSIVENESS */
-  .header {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-  }
+    /* HEADER RESPONSIVENESS */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-  .info {
-      width: 100%;
-      padding: 1rem 0;
-      align-items: center;
-      margin-bottom: 1rem;
-  }
+    .info {
+        width: 100%;
+        padding: 1rem 0;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
 
-  .info h1 {
-      font-size: 2rem;
-  }
+    .info h1 {
+        font-size: 2rem;
+    }
 
-  .info h2 {
-      font-size: 1rem;
-      text-align: center;
-  }
+    .info h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
 
-  .info h3 {
-      font-size: .8rem;
-  }
+    .info h3 {
+        font-size: .8rem;
+    }
 
-  .img {
-      width: 50%;
-      z-index: -1;
-  }
+    .img {
+        width: 50%;
+        z-index: -1;
+    }
 
-  .about {
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-  }
+    .about {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
 
-  .aboutImg {
-      height: 300px;
-  }
+    .aboutImg {
+        height: 300px;
+    }
 
-  .aboutInfo {
-      width: 90%;
-      align-items: center;
-  }
+    .aboutInfo {
+        width: 90%;
+        align-items: center;
+    }
 
-  .aboutInfo h1 {
-      font-size: 1.5rem;
-  }
+    .aboutInfo h1 {
+        font-size: 1.5rem;
+    }
 
-  .skillicon {
-      font-size: 2rem;
-  }
+    .skillicon {
+        font-size: 2rem;
+    }
 
-  .contact form {
-      width: 100%;
-      /* height: 100vh; */
-  }
+    .contact form {
+        width: 100%;
+        /* height: 100vh; */
+    }
 
-  /* projects css media query code responsiveness */
-  .work {
-      flex-direction: column;
-      justify-content: space-evenly;
-  }
-  .work .parent-pcard{
-      width:80%;
-  }
-  .parent-pcard .pdetail{
-      font-size: 10px;
-  }
-  /* resume  */
-  .resdata {
-      width: 80%;
-  }
+    /* projects css media query code responsiveness */
+    .work {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 
-  .resume {
-      height: auto;
-      gap: 1rem;
-      padding: 2rem 0;
-  }
+    .work .parent-pcard {
+        width: 80%;
+    }
 
-  .resume .rimg {
-      display:none
-  }
+    .parent-pcard .pdetail {
+        font-size: 10px;
+    }
 
-  .resdata  h2{
-      font-size: 1rem;
-  }
+    /* resume  */
+    .resdata {
+        width: 80%;
+    }
 
-  .resume{
-      & .row h3,.wt{
-          font-size: .7rem;
-      }
+    .resume {
+        height: auto;
+        gap: 1rem;
+        padding: 2rem 0;
+    }
 
-      & .cdetail h5, .period h5{
-          font-size: .5rem;
-      }
-  }
+    .resume .rimg {
+        display: none
+    }
 
-  /* footer */
-  footer {
-      height: auto;
-  }
-  .phead h1{
-      font-size: 2rem;
-  }
-  .resdata h1{
-      font-size: 2rem;
-  }
+    .resdata h2 {
+        font-size: 1rem;
+    }
+
+    .resume {
+
+        & .row h3,
+        .wt {
+            font-size: .7rem;
+        }
+
+        & .cdetail h5,
+        .period h5 {
+            font-size: .5rem;
+        }
+    }
+
+    /* footer */
+    footer {
+        height: auto;
+    }
+
+    .phead h1 {
+        font-size: 2rem;
+    }
+
+    .resdata h1 {
+        font-size: 2rem;
+    }
 }
