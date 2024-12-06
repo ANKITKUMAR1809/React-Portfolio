@@ -46,17 +46,16 @@
     align-items: center;
     bottom: 50%;
     transform: translate(0, 50%);
-    display:none;
-    transition: all 1s ease-in;
+    opacity: 0;
+    transition: all 0.35s ease-in;
 }
 .hover .icon{
     background-color: var(--link-color);
     border-radius: 50%;
-    color: black;
 }
+
 .box:hover .hover{
-    display: flex;
-    transition: all 1s ease-in-out;
+    opacity: 1;
 }
 
 @media screen and (max-width: 768px) {

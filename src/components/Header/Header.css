@@ -32,6 +32,10 @@
     font-size: 1.3rem;
     font-weight: 500;
     color:var(--secondary-text);
+    text-align: center;
+}
+.info h2 p:first-child{
+    text-align: center;
 }
 
 .img {

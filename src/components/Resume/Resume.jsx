@@ -24,7 +24,7 @@ const Resume = () => {
                         <div className="timeline">
                             <div className="container left">
                                 <div className="content">
-                                    <h2>MCA - ADMISSION PENDING</h2>
+                                    <h2>MCA - College Of Commerce Arts & Science, Patna</h2>
                                     <p>Sept 2024 - Current</p>
                                     <p>Fulltime</p>
                                 </div>
