@@ -67,8 +67,8 @@ const Navbar = () => {
         <span className='theme-dark' onClick={themeChange}>
           {light==="light"?<RiSunFill/>:<RiMoonFill/>}
         </span>
-        <HashLink to="/#about">ABOUT</HashLink>
-        <NavLink to="/projects">PROJECT</NavLink>
+        <HashLink to="#about">ABOUT</HashLink>
+        <HashLink to="#projects">PROJECT</HashLink>
         <HashLink to="#resume">RESUME</HashLink>
         <HashLink to="#contact">CONTACT</HashLink>
         <div className="icon" onClick={myFunction}>

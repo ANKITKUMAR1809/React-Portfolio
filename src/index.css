@@ -42,6 +42,7 @@ a {
 .header,
 .about,
 #contact,
+.project,
 #resume {
     padding: 2rem 1rem;
 }
