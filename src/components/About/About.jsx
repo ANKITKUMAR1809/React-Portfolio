@@ -96,11 +96,11 @@ const About = () => {
                         </div>
                 }
 
-                <a href={Resume} id="download" download="ANKIT KUMAR MERN DEVELOPER">DOWNLOAD CV</a>
+                <a href={Resume} id="download" download="ANKIT KUMAR">DOWNLOAD CV</a>
             </div>
         </div>
 
     )
 }
 
-export default About
+export default About;
