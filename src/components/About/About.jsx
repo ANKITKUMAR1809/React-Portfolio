@@ -96,7 +96,7 @@ const About = () => {
                         </div>
                 }
 
-                <a href={Resume} id="download" download="ANKIT_KUMAR_MERN_DEVELOPER">DOWNLOAD CV</a>
+                <a href={Resume} id="download" download="ANKIT KUMAR MERN DEVELOPER">DOWNLOAD CV</a>
             </div>
         </div>
 
