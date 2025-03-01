@@ -5,7 +5,7 @@ import javascriptSvg from './about-assets/javascript.svg'
 import reactSvg from './about-assets/react.svg'
 import tailwindSvg from './about-assets/tailwing.svg'
 import resumeJpg from './about-assets/resumepic.jpg'
-import Resume from '../../assets/AK-RESUME.pdf'
+import Resume from './about-assets/ak.pdf'
 import Nodejs from './about-assets/nodejs.svg'
 import Mongo from './about-assets/mongodb.svg'
 import Express from './about-assets/express.svg'
@@ -96,7 +96,7 @@ const About = () => {
                         </div>
                 }
 
-                <a href={Resume} id="download" download="ANKIT KUMAR(SAK) RESUME">DOWNLOAD CV</a>
+                <a href={Resume} id="download" download="ANKIT_KUMAR_MERN_DEVELOPER">DOWNLOAD CV</a>
             </div>
         </div>
 
